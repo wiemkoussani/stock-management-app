@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply antialiased text-gray-800;
+}
+
+/* Animation for toast notifications */
+.toast-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.toast-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.toast-exit {
+  opacity: 1;
+}
+.toast-exit-active {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
